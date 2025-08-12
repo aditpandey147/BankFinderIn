@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Locator - Find Nearby Banks</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="logo">
+                <img src="img/logo.webp" alt="" class="brand-logo">
+            </a>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#search">Find Banks</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <h1>Find Banks Near You</h1>
+            <p>Locate nearby banking services with detailed information including branch details, IFSC codes, working hours and more</p>
+            
+            <div class="search-container">
+                <input type="text" id="searchInput" class="search-box" placeholder="Search by bank name or IFSC code...">
+                <button id="searchBtn" class="btn">Search</button>
+                <button id="locateBtn" class="btn location-btn">Find Banks Near Me</button>
+            </div>
+
+            <img src="https://placehold.co/800x450" alt="Modern banking interface showing digital transactions on mobile devices with credit cards and online banking dashboard" class="hero-image">
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container" id="search">
+        <h2 class="section-title">Bank Locations</h2>
+        
+        <div class="map-container">
+            <div id="map"></div>
+        </div>
+
+        <div class="results-container" id="resultsContainer">
+            <div class="no-results">
+                <p>Search for banks or use "Find Banks Near Me" to see results</p>
+            </div>
+        </div>
+
+        <div class="loader" id="loader">
+            <div class="spinner"></div>
+            <p>Loading bank data...</p>
+        </div>
+    </main>
+
+    <!-- Services Section -->
+    <section class="container" id="services">
+        <h2 class="text-3xl font-bold  mb-12 section-title">Our Services</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bank-card">
+                <h3 class="text-xl font-semibold mb-2 text-indigo-600">Bank Finder</h3>
+                <p>Locate the closest ATM with information on availability and supported features.</p>
+            </div>
+
+            <div class="bank-card">
+                <h3 class="text-xl font-semibold mb-2 text-indigo-600">IFSC Code Search</h3>
+                <p>Quickly lookup IFSC codes for any bank branch across India for seamless fund transfers.</p>
+            </div>
+
+            <div class="bank-card">
+                <h3 class="text-xl font-semibold mb-2 text-indigo-600">ATM Finder</h3>
+                <p>Locate the closest ATM with information on availability and supported features.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white" id="about">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center gap-10">
+      
+      <!-- Image -->
+      <div class="md:w-1/2">
+        <img src="img/about-img.webp" alt="About Us" class="rounded-2xl shadow-lg">
+      </div>
+      
+      <!-- Content -->
+      <div class="md:w-1/2">
+            <h2 class="text-4xl font-bold text-gray-800 mb-4">About Us</h2>
+            <p class="text-gray-600 mb-6">
+            We are a passionate team dedicated to delivering high-quality services and innovative solutions. 
+            Our mission is to create experiences that inspire, connect, and transform the way people interact 
+            with technology and each other.
+            </p>
+            <p class="text-gray-600 mb-6">
+            With a focus on creativity, collaboration, and customer satisfaction, we aim to push boundaries 
+            and exceed expectations in every project we take on.
+            </p>
+            <a href="#contact" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-full font-medium shadow hover:bg-blue-700 transition">
+            Contact Us
+            </a>
+      </div>
+    </div>
+  </section>
+
+    <!-- Features Section -->
+    <section class="mb-5">
+        <div class="container">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold  mb-4 section-title">Why Use Bankfinderin?</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Our platform provides comprehensive banking information across India</p>
+            
+            </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-md text-center card">
+                <div class="text-blue-600 mb-4">
+                    <i class="fas fa-map-marked-alt text-4xl"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2 text-indigo-600">Nearby Banks</h3>
+                <p class="text-gray-600">Find all banks in your vicinity with accurate location details and directions.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md text-center card">
+                <div class="text-blue-600 mb-4">
+                    <i class="fas fa-search-dollar text-4xl"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2 text-indigo-600">IFSC Codes</h3>
+                <p class="text-gray-600">Get verified IFSC codes for all banks to facilitate seamless online transactions.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md text-center card">
+                <div class="text-blue-600 mb-4">
+                    <i class="fas fa-clock text-4xl"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2 text-indigo-600">Working Hours</h3>
+                <p class="text-gray-600">Check operational timings, including weekends and holidays, before you visit.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--about-->
+    <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center gap-10">
+      <!-- Image -->
+      <div class="md:w-1/2">
+        <img src="/img/about-img.webp" alt="About Us" class="rounded-2xl shadow-lg">
+      </div>
+      <!-- Content -->
+      <div class="md:w-1/2">
+        <h2 class="text-4xl font-bold text-gray-800 mb-4">About Us</h2>
+        <p class="text-gray-600 mb-6">
+         Bank Locator is a comprehensive platform designed to help you find banking services anywhere in India. Our mission is to make banking information easily accessible to everyone, saving you time and effort.
+        </p>
+        <p class="text-gray-600 mb-6">
+          With thousands of bank branches and ATMs in our database, you can trust us to provide accurate and up-to-date information to meet all your banking needs.
+        </p>
+        <a href="#contact" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-full font-medium shadow hover:bg-blue-700 transition">
+          Contact Us
+        </a>
+      </div>
+    </div>
+  </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-12 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">BankLocator Pro</h3>
+                    <p class="text-gray-400">Your one-stop solution for locating banks and financial services across India.</p>
+                    <div class="mt-4 flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Bank Search</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">IFSC Codes</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Services</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Bank Types</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Public Sector Banks</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Private Banks</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Foreign Banks</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Regional Rural Banks</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Payment Banks</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Newsletter</h3>
+                    <p class="text-gray-400 mb-4">Subscribe to our newsletter for latest updates.</p>
+                    <div class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 w-full rounded-l text-gray-800">
+                        <button class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-r">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-6 text-center text-gray-400">
+                <p>&copy; 2023 BankLocator Pro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
