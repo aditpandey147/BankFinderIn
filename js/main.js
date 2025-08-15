@@ -7,29 +7,161 @@ document.addEventListener("DOMContentLoaded", function () {
     navLinks.classList.toggle("active");
   });
 
-  // Sample bank data (in a real app, you would fetch this from an API)
+  // Sample bank data
   const banks = [
+    //barrackpore
     {
       name: "Canara Bank",
       branch: "Barrackpore",
-      address: "Ward No.12, H.o, I Floor, 181(93, 4, Old Calcutta Rd, Barrackpore, West Bengal 700122",
+      address:
+        "Ward No.12, H.o, I Floor, 181(93, 4, Old Calcutta Rd, Barrackpore, West Bengal 700122",
       ifsc: "CNRB0003716",
       phone: "+913325453581",
-      hours: { mon_fri: "10:00 AM - 4:00 PM", sat: "10:00 AM - 4:00 PM", sun: "Closed" },
+      hours: {
+        mon_fri: "10:00 AM - 4:00 PM",
+        sat: "10:00 AM - 4:00 PM",
+        sun: "Closed",
+      },
       coordinates: [22.757706, 88.374283],
+      services: ["ATM", "Loans", "Deposit"],
+    },
+    {
+      name: "Canara Bank",
+      branch: "Barrackpore II",
+      address:
+        "195, Barrackpore - Barasat Rd, P.O-N.C Pukur, Kolkata, Barrackpore, West Bengal 700122",
+      ifsc: "CNRB0019774",
+      phone: "18001030",
+      hours: {
+        mon_fri: "10:00 AM - 4:00 PM",
+        sat: "10:00 AM - 4:00 PM",
+        sun: "Closed",
+      },
+      coordinates: [22.766889912846608, 88.37226064056725],
+      services: ["ATM", "Loans", "Deposit"],
+    },
+    {
+      name: "Bank of India",
+      branch: "Barrackpore",
+      address:
+        "199 Barasat Road Po Nona Chandanpurkurbarrackpore Dist North 24 Parganas",
+      ifsc: "BKID0004378",
+      phone: "25922470",
+      hours: {
+        mon_fri: "10:00 AM - 4:00 PM",
+        sat: "10:00 AM - 4:00 PM",
+        sun: "Closed",
+      },
+      coordinates: [22.76680927506247, 88.37111299215096],
       services: ["ATM", "Loans", "Deposit"],
     },
     {
       name: "Bank of India",
       branch: "Adamas institute of technology campus",
-      address: "Adamas institute of technology premises village barasat barrackpore road pin 700126",
+      address:
+        "Adamas institute of technology premises village barasat barrackpore road pin 700126",
       ifsc: "BKID0004156",
       phone: "+919836352749",
-      hours: { mon_fri: "10:00 AM - 4:00 PM", sat: "10:00 AM - 4:00 PM", sun: "Closed" },
+      hours: {
+        mon_fri: "10:00 AM - 4:00 PM",
+        sat: "10:00 AM - 4:00 PM",
+        sun: "Closed",
+      },
       coordinates: [22.738811214101485, 88.45752060414155],
       services: ["ATM", "Loans", "Deposit"],
     },
-    // ... rest of your banks
+    {
+      name: "State bank of india",
+      branch: "Barackpore railway station",
+      address:
+        "B.T.Rd, Chiriamore, Barrackpore, 24.Parganasnorth, W.Bengal",
+      ifsc: "SBIN0003071",
+      phone: "1800112211",
+      hours: {
+        mon_fri: "10:00 AM - 4:00 PM",
+        sat: "10:00 AM - 4:00 PM",
+        sun: "Closed",
+      },
+      coordinates: [22.76153277558813, 88.36713887764535],
+      services: ["ATM", "Loans", "Deposit"],
+    },
+    {
+      name: "State bank of india",
+      branch: "New Barrackpore",
+      address:
+        "Station, Main Rd E, P O, Chandra Pally, New Barrakpur, West Bengal 700131",
+      ifsc: "SBIN0006809",
+      phone: "18001234",
+      hours: {
+        mon_fri: "10:00 AM - 4:00 PM",
+        sat: "10:00 AM - 4:00 PM",
+        sun: "Closed",
+      },
+      coordinates: [22.687809357758592, 88.45201706351202],
+      services: ["ATM", "Loans", "Deposit"],
+    },
+
+    {
+      name: "State bank of india",
+      branch: "Colony More, Barasat",
+      address:
+        "Colony More Barasat 15 Sarojinipally Barrackpore Road Helabattala Nabapally, Barasat, West Bengal 700126",
+      ifsc: "SBIN0010090",
+      phone: "18001234",
+      hours: {
+        mon_fri: "10:00 AM - 4:00 PM",
+        sat: "10:00 AM - 4:00 PM",
+        sun: "Closed",
+      },
+      coordinates: [22.724917594505058, 88.47852667694336],
+      services: ["ATM", "Loans", "Deposit"],
+    },
+    
+    {
+      name: "State bank of india",
+      branch: "Nona Chandanpukur",
+      address:
+        "91, Barasat Road, 24 Paraganas, North, Nona Chandanpukur, P.O, West Bengal 700122",
+      ifsc: "SBIN0014530",
+      phone: "18001234",
+      hours: {
+        mon_fri: "10:00 AM - 4:00 PM",
+        sat: "10:00 AM - 4:00 PM",
+        sun: "Closed",
+      },
+      coordinates: [22.768101733405814, 88.37695346492615],
+      services: ["ATM", "Loans", "Deposit"],
+    },
+    {
+      name: "State bank of india",
+      branch: "Talpukur",
+      address:
+        "7, K N Mukherjee Road Talpukur Barrackpore North 24 Parganas 24 Paraganas, West Bengal 700123",
+      ifsc: "SBIN0016769",
+      phone: "18001234",
+      hours: {
+        mon_fri: "10:00 AM - 4:00 PM",
+        sat: "10:00 AM - 4:00 PM",
+        sun: "Closed",
+      },
+      coordinates: [22.751799887725188, 88.37350274907085],
+      services: ["ATM", "Loans", "Deposit"],
+    },
+    {
+      name: "State bank of india",
+      branch: "Lalkuthi",
+      address:
+        "67a, Ghoshpara Road, Lalkuthi Barrachpore, North 24 Paraganas 24 Paraganas, West Bengal 700120",
+      ifsc: "SBIN0017371",
+      phone: "18001234",
+      hours: {
+        mon_fri: "10:00 AM - 4:00 PM",
+        sat: "10:00 AM - 4:00 PM",
+        sun: "Closed",
+      },
+      coordinates: [22.77439592601768, 88.36996922913656],
+      services: ["ATM", "Loans", "Deposit"],
+    },
   ];
 
   let map;
@@ -94,6 +226,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 <p><strong>Phone:</strong> ${bank.phone}</p>
                 <p><strong>Status:</strong> <span class="${isOpen ? "status-open" : "status-closed"}">${isOpen ? "OPEN NOW" : "CLOSED NOW"}</span></p>
                 ${userPosition ? `<span class="distance">${calculateDistance(userPosition.lat, userPosition.lng, bank.coordinates[0], bank.coordinates[1])} km away</span>` : ""}
+                <div class="working-hours">
+                  <h4>Working Hours</h4>
+                  <p><strong>Mon-Fri:</strong> ${bank.hours.mon_fri}</p>
+                  <p><strong>Saturday:</strong> ${bank.hours.sat}</p>
+                  <p><strong>Sunday:</strong> ${bank.hours.sun}</p>
+                </div>
                </div>`;
     });
 
@@ -164,8 +302,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
           findNearbyBanks();
         },
-        (error) => {
-          alert("Could not get your location. Using default location.");
+        () => {
+          alert("Could not get your location.");
           document.getElementById("loader").style.display = "none";
         }
       );
@@ -180,7 +318,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (userPosition) {
       banksToShow = banks.filter((bank) => {
         const distance = parseFloat(calculateDistance(userPosition.lat, userPosition.lng, bank.coordinates[0], bank.coordinates[1]));
-        return distance <= 5; // only within 5 km
+        return distance <= 5; // Only within 5 km
       }).sort((a, b) => {
         return calculateDistance(userPosition.lat, userPosition.lng, a.coordinates[0], a.coordinates[1]) -
                calculateDistance(userPosition.lat, userPosition.lng, b.coordinates[0], b.coordinates[1]);
