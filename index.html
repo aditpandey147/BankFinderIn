@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bank Locator - Find Nearby Banks</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/telwind.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -89,7 +90,7 @@
       
       <!-- Image -->
       <div class="md:w-1/2">
-        <img src="https://via.placeholder.com/500x350" alt="About Us" class="rounded-2xl shadow-lg">
+        <img src="img/about-img.webp" alt="About Us" class="rounded-2xl shadow-lg">
       </div>
       
       <!-- Content -->
@@ -115,7 +116,7 @@
     <section class="mb-5">
         <div class="container">
             <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold  mb-4 section-title">Why Use Bankfinderin?</h2>
+                <h2 class="text-3xl font-bold  mb-4 section-title">Why Use findyourbanks?</h2>
                 <p class="text-gray-600 max-w-2xl mx-auto">Our platform provides comprehensive banking information across India</p>
             
             </div>
@@ -147,28 +148,61 @@
         </div>
     </section>
 
-    <!--about-->
-    <section class="py-16 bg-white">
-    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center gap-10">
-      <!-- Image -->
-      <div class="md:w-1/2">
-        <img src="/img/about-img.webp" alt="About Us" class="rounded-2xl shadow-lg">
-      </div>
-      <!-- Content -->
-      <div class="md:w-1/2">
-        <h2 class="text-4xl font-bold text-gray-800 mb-4">About Us</h2>
-        <p class="text-gray-600 mb-6">
-         Bank Locator is a comprehensive platform designed to help you find banking services anywhere in India. Our mission is to make banking information easily accessible to everyone, saving you time and effort.
-        </p>
-        <p class="text-gray-600 mb-6">
-          With thousands of bank branches and ATMs in our database, you can trust us to provide accurate and up-to-date information to meet all your banking needs.
-        </p>
-        <a href="#contact" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-full font-medium shadow hover:bg-blue-700 transition">
-          Contact Us
-        </a>
-      </div>
-    </div>
-  </section>
+
+    <section class="contact-form">
+        <div class="container flex items-center justify-center">
+            <div class="bg-white/80 backdrop-blur-lg shadow-xl rounded-2xl p-8 w-full max-w-xl border border-blue-100">
+                <h2 class="text-3xl font-bold text-blue-700 text-center mb-2">Missing Bank Details?</h2>
+                <p class="text-gray-600 text-center mb-6">
+                If your nearest bank is not showing, please provide the full details below.  
+                Our team will add it to the database within <strong>24 working hours</strong>.
+                </p>
+
+                <form id="bankForm" class="space-y-5">
+                    <!-- Bank Name -->
+                    <div class="relative">
+                        <input type="text" name="bank_name" required
+                        class="peer w-full border border-gray-300 rounded-lg px-3 pt-5 pb-2 text-gray-900 placeholder-transparent focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none"
+                        placeholder="Bank Name" />
+                        <label class="absolute left-3 top-2 text-gray-500 text-sm peer-placeholder-shown:top-4 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-base transition-all">Bank Name</label>
+                    </div>
+
+                    <!-- Branch Name -->
+                    <div class="relative">
+                        <input type="text" name="branch_name" required
+                        class="peer w-full border border-gray-300 rounded-lg px-3 pt-5 pb-2 text-gray-900 placeholder-transparent focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none"
+                        placeholder="Branch Name" />
+                        <label class="absolute left-3 top-2 text-gray-500 text-sm peer-placeholder-shown:top-4 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-base transition-all">Branch Name</label>
+                    </div>
+
+                    <!-- IFSC Code -->
+                    <div class="relative">
+                        <input type="text" name="ifsc_code" required
+                        class="peer w-full border border-gray-300 rounded-lg px-3 pt-5 pb-2 text-gray-900 placeholder-transparent focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none"
+                        placeholder="IFSC Code" />
+                        <label class="absolute left-3 top-2 text-gray-500 text-sm peer-placeholder-shown:top-4 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-base transition-all">IFSC Code</label>
+                    </div>
+
+                    <!-- Address -->
+                    <div class="relative">
+                        <textarea name="address" rows="3" required
+                        class="peer w-full border border-gray-300 rounded-lg px-3 pt-5 pb-2 text-gray-900 placeholder-transparent focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none resize-none"
+                        placeholder="Address"></textarea>
+                        <label class="absolute left-3 top-2 text-gray-500 text-sm peer-placeholder-shown:top-4 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-base transition-all">Address</label>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit"
+                        class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-lg shadow-md transition transform hover:scale-[1.02]">
+                        Submit Bank Details
+                    </button>
+
+                    <!-- Success Message -->
+                    <p id="formMessage" class="hidden text-green-600 text-center font-semibold mt-4">✅ Your bank details have been sent successfully!</p>
+                </form>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-white pt-12 pb-8">
@@ -220,7 +254,7 @@
             </div>
 
             <div class="border-t border-gray-800 pt-6 text-center text-gray-400">
-                <p>&copy; 2023 BankLocator Pro. All rights reserved.</p>
+                <p>&copy; 2023 findyourbanks . All rights reserved.</p>
             </div>
         </div>
     </footer>

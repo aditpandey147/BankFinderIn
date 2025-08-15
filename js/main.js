@@ -9,76 +9,161 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Sample bank data (in a real app, you would fetch this from an API)
   const banks = [
+    
+    //barrackpore
     {
-      name: "State Bank of India",
-      branch: "Main Branch",
-      address: "123 Main Street, Mumbai",
-      ifsc: "SBIN0001234",
-      phone: "022-12345678",
+      name: "Canara Bank",
+      branch: "Barrackpore",
+      address:
+        "Ward No.12, H.o, I Floor, 181(93, 4, Old Calcutta Rd, Barrackpore, West Bengal 700122",
+      ifsc: "CNRB0003716",
+      phone: "+913325453581",
       hours: {
-        mon_fri: "9:00 AM - 4:00 PM",
-        sat: "9:00 AM - 1:00 PM",
+        mon_fri: "10:00 AM - 4:00 PM",
+        sat: "10:00 AM - 4:00 PM",
         sun: "Closed",
       },
-      coordinates: [19.076, 72.8777], // Mumbai
+      coordinates: [22.757706, 88.374283],
       services: ["ATM", "Loans", "Deposit"],
     },
     {
-      name: "HDFC Bank",
-      branch: "Andheri Branch",
-      address: "456 Andheri Road, Mumbai",
-      ifsc: "HDFC0005678",
-      phone: "022-87654321",
+      name: "Canara Bank",
+      branch: "Barrackpore II",
+      address:
+        "195, Barrackpore - Barasat Rd, P.O-N.C Pukur, Kolkata, Barrackpore, West Bengal 700122",
+      ifsc: "CNRB0019774",
+      phone: "18001030",
       hours: {
-        mon_fri: "8:30 AM - 5:30 PM",
-        sat: "8:30 AM - 2:00 PM",
+        mon_fri: "10:00 AM - 4:00 PM",
+        sat: "10:00 AM - 4:00 PM",
         sun: "Closed",
       },
-      coordinates: [19.1197, 72.8468], // Andheri
-      services: ["ATM", "Credit Cards", "Net Banking"],
+      coordinates: [22.766889912846608, 88.37226064056725],
+      services: ["ATM", "Loans", "Deposit"],
     },
     {
-      name: "ICICI Bank",
-      branch: "Borivali Branch",
-      address: "789 Borivali Street, Mumbai",
-      ifsc: "ICIC0009012",
-      phone: "022-23456789",
+      name: "Bank of India",
+      branch: "Barrackpore",
+      address:
+        "199 Barasat Road Po Nona Chandanpurkurbarrackpore Dist North 24 Parganas",
+      ifsc: "BKID0004378",
+      phone: "25922470",
       hours: {
-        mon_fri: "9:30 AM - 4:30 PM",
-        sat: "9:30 AM - 1:30 PM",
+        mon_fri: "10:00 AM - 4:00 PM",
+        sat: "10:00 AM - 4:00 PM",
         sun: "Closed",
       },
-      coordinates: [19.2307, 72.8567], // Borivali
-      services: ["ATM", "Mobile Banking", "Investments"],
+      coordinates: [22.76680927506247, 88.37111299215096],
+      services: ["ATM", "Loans", "Deposit"],
     },
     {
-      name: "Axis Bank",
-      branch: "Thane Branch",
-      address: "321 Thane Road, Thane",
-      ifsc: "AXIS0003456",
-      phone: "022-34567890",
+      name: "Bank of India",
+      branch: "Adamas institute of technology campus",
+      address:
+        "Adamas institute of technology premises village barasat barrackpore road pin 700126",
+      ifsc: "BKID0004156",
+      phone: "+919836352749",
       hours: {
-        mon_fri: "8:00 AM - 6:00 PM",
-        sat: "8:00 AM - 3:00 PM",
-        sun: "10:00 AM - 2:00 PM",
-      },
-      coordinates: [19.2183, 72.9781], // Thane
-      services: ["ATM", "Forex", "Insurance"],
-    },
-    {
-      name: "Bank of Baroda",
-      branch: "Pune Branch",
-      address: "654 Pune Street, Pune",
-      ifsc: "BARB0007890",
-      phone: "020-45678901",
-      hours: {
-        mon_fri: "10:00 AM - 5:00 PM",
-        sat: "10:00 AM - 1:00 PM",
+        mon_fri: "10:00 AM - 4:00 PM",
+        sat: "10:00 AM - 4:00 PM",
         sun: "Closed",
       },
-      coordinates: [18.5204, 73.8567], // Pune
-      services: ["ATM", "Personal Loans", "Fixed Deposits"],
+      coordinates: [22.738811214101485, 88.45752060414155],
+      services: ["ATM", "Loans", "Deposit"],
     },
+    {
+      name: "State bank of india",
+      branch: "Barackpore railway station",
+      address:
+        "1.B.T.Rd.,Chiriamore,P.O.Barrackpore,24.Parganasnorth,W.Bengal",
+      ifsc: "SBIN0003071",
+      phone: "1800112211",
+      hours: {
+        mon_fri: "10:00 AM - 4:00 PM",
+        sat: "10:00 AM - 4:00 PM",
+        sun: "Closed",
+      },
+      coordinates: [22.76153277558813, 88.36713887764535],
+      services: ["ATM", "Loans", "Deposit"],
+    },
+    {
+      name: "State bank of india",
+      branch: "New Barrackpore",
+      address:
+        "Station, Main Rd E, P O, Chandra Pally, New Barrakpur, West Bengal 700131",
+      ifsc: "SBIN0006809",
+      phone: "18001234",
+      hours: {
+        mon_fri: "10:00 AM - 4:00 PM",
+        sat: "10:00 AM - 4:00 PM",
+        sun: "Closed",
+      },
+      coordinates: [22.687809357758592, 88.45201706351202],
+      services: ["ATM", "Loans", "Deposit"],
+    },
+
+    {
+      name: "State bank of india",
+      branch: "Colony More, Barasat",
+      address:
+        "Colony More Barasat 15 Sarojinipally Barrackpore Road Helabattala Nabapally, Barasat, West Bengal 700126",
+      ifsc: "SBIN0010090",
+      phone: "18001234",
+      hours: {
+        mon_fri: "10:00 AM - 4:00 PM",
+        sat: "10:00 AM - 4:00 PM",
+        sun: "Closed",
+      },
+      coordinates: [22.724917594505058, 88.47852667694336],
+      services: ["ATM", "Loans", "Deposit"],
+    },
+    
+    {
+      name: "State bank of india",
+      branch: "Nona Chandanpukur",
+      address:
+        "91, Barasat Road, 24 Paraganas, North, Nona Chandanpukur, P.O, West Bengal 700122",
+      ifsc: "SBIN0014530",
+      phone: "18001234",
+      hours: {
+        mon_fri: "10:00 AM - 4:00 PM",
+        sat: "10:00 AM - 4:00 PM",
+        sun: "Closed",
+      },
+      coordinates: [22.768101733405814, 88.37695346492615],
+      services: ["ATM", "Loans", "Deposit"],
+    },
+    {
+      name: "State bank of india",
+      branch: "Talpukur",
+      address:
+        "7, K N Mukherjee Road Talpukur Barrackpore North 24 Parganas 24 Paraganas, West Bengal 700123",
+      ifsc: "SBIN0016769",
+      phone: "18001234",
+      hours: {
+        mon_fri: "10:00 AM - 4:00 PM",
+        sat: "10:00 AM - 4:00 PM",
+        sun: "Closed",
+      },
+      coordinates: [22.751799887725188, 88.37350274907085],
+      services: ["ATM", "Loans", "Deposit"],
+    },
+    {
+      name: "State bank of india",
+      branch: "Lalkuthi",
+      address:
+        "67a, Ghoshpara Road, Lalkuthi Barrachpore, North 24 Paraganas 24 Paraganas, West Bengal 700120",
+      ifsc: "SBIN0017371",
+      phone: "18001234",
+      hours: {
+        mon_fri: "10:00 AM - 4:00 PM",
+        sat: "10:00 AM - 4:00 PM",
+        sun: "Closed",
+      },
+      coordinates: [22.77439592601768, 88.36996922913656],
+      services: ["ATM", "Loans", "Deposit"],
+    },
+    
   ];
 
   let map;
@@ -400,3 +485,28 @@ function loadGoogleMaps() {
 }
 
 loadGoogleMaps();
+
+document.getElementById("bankForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  emailjs
+    .send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", {
+      bank_name: this.bank_name.value,
+      branch_name: this.branch_name.value,
+      ifsc_code: this.ifsc_code.value,
+      address: this.address.value,
+      to_email: "aditpandey14608@gmail.com",
+    })
+    .then(
+      function (response) {
+        document.getElementById("formMessage").classList.remove("hidden");
+      },
+      function (error) {
+        alert("❌ Failed to send details. Please try again.");
+      }
+    );
+});
+
+(function () {
+  emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your EmailJS public key
+})();
