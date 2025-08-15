@@ -234,7 +234,7 @@ document.addEventListener("DOMContentLoaded", function () {
         sat: "10:00 AM - 4:00 PM",
         sun: "Closed",
       },
-      coordinates: [22.761842017206117, 88.3663577593758],
+      coordinates: [22.761810166807667, 88.36627039060208],
       services: ["ATM", "Loans", "Deposit"],
     },
     {
@@ -249,7 +249,7 @@ document.addEventListener("DOMContentLoaded", function () {
         sat: "09:30 AM - 3:30 PM",
         sun: "Closed",
       },
-      coordinates: [22.767184089477137, 88.38213020926467],
+      coordinates: [22.767200262449595, 88.38214757749718],
       services: ["ATM", "Loans", "Deposit"],
     },
     {
@@ -264,7 +264,7 @@ document.addEventListener("DOMContentLoaded", function () {
         sat: "09:30 AM - 3:30 PM",
         sun: "Closed",
       },
-      coordinates: [22.686911929297114, 88.44841616749294],
+      coordinates: [22.743659873497446, 88.37229256937063],
       services: ["ATM", "Loans", "Deposit"],
     },
   ];
