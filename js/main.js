@@ -241,7 +241,7 @@ document.addEventListener("DOMContentLoaded", function () {
       name: "Hdfc Bank",
       branch: "Nona Chandanpukur",
       address:
-        "Ground Floor, 38/1/1, Barasat Rd, Nona Chandanpukur, Jaffarpukur, Chakraborty Para, Barrackpore, West Bengal 700122",
+        "No 37/2, Gr Floor, Biswanath Residency, Barasat Rd, Nona Chandanpukur, Jaffarpur More, Kolkata, Barrackpore, West Bengal 700122",
       ifsc: "HDFC0007229",
       phone: "9409767967",
       hours: {
