@@ -410,24 +410,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Find banks near user
   function findNearbyBanks() {
-    // In a real app, you would fetch banks based on user location from an API
-    // Here we're using our sample data
+    let banksToShow = banks;
     if (userPosition) {
-      // Sort banks by distance
-      banks.sort((a, b) => {
-        const distanceA = calculateDistance(
-          userPosition.lat,
-          userPosition.lng,
-          a.coordinates[0],
-          a.coordinates[1]
-        );
-        const distanceB = calculateDistance(
-          userPosition.lat,
-          userPosition.lng,
-          b.coordinates[0],
-          b.coordinates[1]
-        );
-        return distanceA - distanceB;
+      banksToShow = banks.filter((bank) => {
+        const distance = parseFloat(calculateDistance(userPosition.lat, userPosition.lng, bank.coordinates[0], bank.coordinates[1]));
+        return distance <= 5; // Only within 5 km
+      }).sort((a, b) => {
+        return calculateDistance(userPosition.lat, userPosition.lng, a.coordinates[0], a.coordinates[1]) -
+               calculateDistance(userPosition.lat, userPosition.lng, b.coordinates[0], b.coordinates[1]);
       });
     }
 
