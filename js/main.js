@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
       name: "State bank of india",
       branch: "Barackpore railway station",
       address:
-        "B.T.Rd, Chiriamore, P.O.Barrackpore, 24.Parganasnorth, W.Bengal",
+        "B.T.Rd, Chiriamore, Barrackpore, 24.Parganasnorth, W.Bengal",
       ifsc: "SBIN0003071",
       phone: "1800112211",
       hours: {
@@ -409,32 +409,44 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Find banks near user
-  function findNearbyBanks() {
-    // In a real app, you would fetch banks based on user location from an API
-    // Here we're using our sample data
-    if (userPosition) {
-      // Sort banks by distance
-      banks.sort((a, b) => {
-        const distanceA = calculateDistance(
-          userPosition.lat,
-          userPosition.lng,
-          a.coordinates[0],
-          a.coordinates[1]
-        );
-        const distanceB = calculateDistance(
-          userPosition.lat,
-          userPosition.lng,
-          b.coordinates[0],
-          b.coordinates[1]
-        );
-        return distanceA - distanceB;
-      });
-    }
+function findNearbyBanks() {
+  let banksToShow = banks;
+
+  if (userPosition) {
+    // Filter only banks within 5 km
+    banksToShow = banks.filter((bank) => {
+      const distance = calculateDistance(
+        userPosition.lat,
+        userPosition.lng,
+        bank.coordinates[0],
+        bank.coordinates[1]
+      );
+      return distance <= 5; // only within 5 km
+    });
+
+     // Sort by distance
+    banksToShow.sort((a, b) => {
+      const distanceA = calculateDistance(
+        userPosition.lat,
+        userPosition.lng,
+        a.coordinates[0],
+        a.coordinates[1]
+      );
+      const distanceB = calculateDistance(
+        userPosition.lat,
+        userPosition.lng,
+        b.coordinates[0],
+        b.coordinates[1]
+      );
+      return distanceA - distanceB;
+    });
+  }
 
     placeBankMarkers(banks);
     displayBankCards(banks);
     document.getElementById("loader").style.display = "none";
   }
+  
 
   // Search banks by name or IFSC
   function searchBanks(query) {
