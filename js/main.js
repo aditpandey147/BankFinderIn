@@ -414,7 +414,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (userPosition) {
       banksToShow = banks.filter((bank) => {
         const distance = parseFloat(calculateDistance(userPosition.lat, userPosition.lng, bank.coordinates[0], bank.coordinates[1]));
-        return distance <= 50; // Only within 5 km
+        return distance <= 5; // Only within 5 km
       }).sort((a, b) => {
         return calculateDistance(userPosition.lat, userPosition.lng, a.coordinates[0], a.coordinates[1]) -
                calculateDistance(userPosition.lat, userPosition.lng, b.coordinates[0], b.coordinates[1]);
