@@ -211,7 +211,7 @@ document.addEventListener("DOMContentLoaded", function () {
       name: "Axis Bank",
       branch: "New Barrackpore",
       address:
-        "Ground Floor, 38/1/1, Barasat Rd, Nona Chandanpukur, Jaffarpukur, Chakraborty Para, Barrackpore, West Bengal 700122",
+        "Ground Floor, 38/1/1, Barasat Rd, Nona Chandanpukur, Jaffarpukur, Barrackpore, West Bengal 700122",
       ifsc: "UTIB0002555",
       phone: "18605005555",
       hours: {
@@ -226,7 +226,7 @@ document.addEventListener("DOMContentLoaded", function () {
       name: "Central Bank Of India",
       branch: "Barrackpore",
       address:
-        "Ground Floor, 38/1/1, Barasat Rd, Nona Chandanpukur, Jaffarpukur, Chakraborty Para, Barrackpore, West Bengal 700122",
+        "25 26 And 28 S.n.banerjee Road, Chiriarmore, Barrackpore, North.24 Paraganas, West Bengal 743101",
       ifsc: "CBIN0281090",
       phone: "03325920553",
       hours: {
