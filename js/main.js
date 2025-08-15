@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
       ifsc: "SBIN0003071",
       phone: "1800112211",
       hours: {
-        mon_fri: "10:00 AM - 4:00 PM",
+        mon_fri: "10:00 AM - 8:00 PM",
         sat: "10:00 AM - 4:00 PM",
         sun: "Closed",
       },
