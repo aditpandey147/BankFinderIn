@@ -411,15 +411,35 @@ document.addEventListener("DOMContentLoaded", function () {
   // Find banks near user
   function findNearbyBanks() {
     let banksToShow = banks;
-    if (userPosition) {
-      banksToShow = banks.filter((bank) => {
-        const distance = parseFloat(calculateDistance(userPosition.lat, userPosition.lng, bank.coordinates[0], bank.coordinates[1]));
-        return distance <= 5; // Only within 5 km
-      }).sort((a, b) => {
-        return calculateDistance(userPosition.lat, userPosition.lng, a.coordinates[0], a.coordinates[1]) -
-               calculateDistance(userPosition.lat, userPosition.lng, b.coordinates[0], b.coordinates[1]);
-      });
-    }
+     if (userPosition) {
+    // Filter only banks within 5 km
+    banksToShow = banks.filter((bank) => {
+      const distance = calculateDistance(
+        userPosition.lat,
+        userPosition.lng,
+        bank.coordinates[0],
+        bank.coordinates[1]
+      );
+      return distance <= 5; // only within 5 km
+    });
+
+    // Sort by distance
+    banksToShow.sort((a, b) => {
+      const distanceA = calculateDistance(
+        userPosition.lat,
+        userPosition.lng,
+        a.coordinates[0],
+        a.coordinates[1]
+      );
+      const distanceB = calculateDistance(
+        userPosition.lat,
+        userPosition.lng,
+        b.coordinates[0],
+        b.coordinates[1]
+      );
+      return distanceA - distanceB;
+    });
+  }
 
     placeBankMarkers(banks);
     displayBankCards(banks);
