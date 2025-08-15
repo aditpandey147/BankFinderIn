@@ -209,7 +209,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
      {
       name: "Axis Bank",
-      branch: "New Barrackpore",
+      branch: "Chandanpukur",
       address:
         "Ground Floor, 38/1/1, Barasat Rd, Nona Chandanpukur, Jaffarpukur, Chakraborty Para, Barrackpore, West Bengal 700122",
       ifsc: "UTIB0002555",
@@ -226,7 +226,7 @@ document.addEventListener("DOMContentLoaded", function () {
       name: "Central Bank Of India",
       branch: "Barrackpore",
       address:
-        "Ground Floor, 38/1/1, Barasat Rd, Nona Chandanpukur, Jaffarpukur, Chakraborty Para, Barrackpore, West Bengal 700122",
+        "25 26 And 28 S.n.banerjee Road, Chiriarmore, Barrackpore, North24 Paraganas, West Bengal 743101",
       ifsc: "CBIN0281090",
       phone: "03325920553",
       hours: {
@@ -241,7 +241,7 @@ document.addEventListener("DOMContentLoaded", function () {
       name: "Hdfc Bank",
       branch: "Nona Chandanpukur",
       address:
-        "Ground Floor, 38/1/1, Barasat Rd, Nona Chandanpukur, Jaffarpukur, Chakraborty Para, Barrackpore, West Bengal 700122",
+        "No 37/2, Gr Floor, Biswanath Residency, Barasat Rd, Nona Chandanpukur, Jaffarpur More, Chakraborty Para, Kolkata, Barrackpore, West Bengal 700122",
       ifsc: "HDFC0007229",
       phone: "9409767967",
       hours: {
@@ -249,7 +249,7 @@ document.addEventListener("DOMContentLoaded", function () {
         sat: "09:30 AM - 3:30 PM",
         sun: "Closed",
       },
-      coordinates: [22.767189428763224, 88.382157599293],
+      coordinates: [22.767184089477137, 88.38213020926467],
       services: ["ATM", "Loans", "Deposit"],
     },
     {
