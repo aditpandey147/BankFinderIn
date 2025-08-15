@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
       name: "State bank of india",
       branch: "Barackpore railway station",
       address:
-        "1.B.T.Rd.,Chiriamore,P.O.Barrackpore,24.Parganasnorth,W.Bengal",
+        "B.T.Rd, Chiriamore, P.O.Barrackpore, 24.Parganasnorth, W.Bengal",
       ifsc: "SBIN0003071",
       phone: "1800112211",
       hours: {
