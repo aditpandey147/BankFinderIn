@@ -278,6 +278,12 @@ document.addEventListener("DOMContentLoaded", function () {
     map = new google.maps.Map(document.getElementById("map"), {
       center: { lat: 19.076, lng: 72.8777 },
       zoom: 12,
+      styles: [
+        {
+          featureType: "poi.business",
+          stylers: [{ visibility: "on" }],
+        },
+      ],
     });
   }
 
