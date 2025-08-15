@@ -162,6 +162,111 @@ document.addEventListener("DOMContentLoaded", function () {
       coordinates: [22.77439592601768, 88.36996922913656],
       services: ["ATM", "Loans", "Deposit"],
     },
+    {
+      name: "State bank of india",
+      branch: "Barrackpore Army Cantonment",
+      address:
+        "Bldg No T-6-1 To T-6-4 Shopping Complex, Barrackpore Cantonment, kolkata, West Bengal-700120",
+      ifsc: "SBIN0061644",
+      phone: "+919674058999",
+      hours: {
+        mon_fri: "10:00 AM - 4:00 PM",
+        sat: "10:00 AM - 4:00 PM",
+        sun: "Closed",
+      },
+      coordinates: [22.764224586478033, 88.35897729360077],
+      services: ["ATM", "Loans", "Deposit"],
+    },
+     {
+      name: "Axis Bank",
+      branch: "Barrackpore",
+      address:
+        "Disha Eye Hospital & Research Centre 99/1, S.n. Banerjee Road, Barrackpore, West Bengal 700120",
+      ifsc: "UTIB0000436",
+      phone: "18605005555",
+      hours: {
+        mon_fri: "Open 24 hours",
+        sat: "Open 24 hours",
+        sun: "Open 24 hours",
+      },
+      coordinates: [22.76372412567126, 88.36973200314543],
+      services: ["ATM", "Loans", "Deposit"],
+    },
+     {
+      name: "Axis Bank",
+      branch: "New Barrackpore",
+      address:
+        "Basudha Apartment, 33 & 35 A.P.C. Road, New Barrackpore, PS Ghola, Dist. North 24 Parganas, West Bengal, Pin 700131",
+      ifsc: "UTIB0001656",
+      phone: "18605005555",
+      hours: {
+        mon_fri: "09:30 AM - 3:30 PM",
+        sat: "09:30 AM - 3:30 PM",
+        sun: "Closed",
+      },
+      coordinates: [22.689194106162965, 88.4488496016247],
+      services: ["ATM", "Loans", "Deposit"],
+    },
+     {
+      name: "Axis Bank",
+      branch: "New Barrackpore",
+      address:
+        "Ground Floor, 38/1/1, Barasat Rd, Nona Chandanpukur, Jaffarpukur, Chakraborty Para, Barrackpore, West Bengal 700122",
+      ifsc: "UTIB0002555",
+      phone: "18605005555",
+      hours: {
+        mon_fri: "09:30 AM - 3:30 PM",
+        sat: "09:30 AM - 3:30 PM",
+        sun: "Closed",
+      },
+      coordinates: [22.768059729347527, 88.38255554372998],
+      services: ["ATM", "Loans", "Deposit"],
+    },
+    {
+      name: "Central Bank Of India",
+      branch: "Barrackpore",
+      address:
+        "Ground Floor, 38/1/1, Barasat Rd, Nona Chandanpukur, Jaffarpukur, Chakraborty Para, Barrackpore, West Bengal 700122",
+      ifsc: "CBIN0281090",
+      phone: "03325920553",
+      hours: {
+        mon_fri: "10:00 AM - 4:00 PM",
+        sat: "10:00 AM - 4:00 PM",
+        sun: "Closed",
+      },
+      coordinates: [22.761842017206117, 88.3663577593758],
+      services: ["ATM", "Loans", "Deposit"],
+    },
+    {
+      name: "Hdfc Bank",
+      branch: "Nona Chandanpukur",
+      address:
+        "Ground Floor, 38/1/1, Barasat Rd, Nona Chandanpukur, Jaffarpukur, Chakraborty Para, Barrackpore, West Bengal 700122",
+      ifsc: "HDFC0007229",
+      phone: "9409767967",
+      hours: {
+        mon_fri: "09:30 AM - 3:30 PM",
+        sat: "09:30 AM - 3:30 PM",
+        sun: "Closed",
+      },
+      coordinates: [22.767189428763224, 88.382157599293],
+      services: ["ATM", "Loans", "Deposit"],
+    },
+    {
+      name: "Hdfc Bank",
+      branch: "Barrackpore",
+      address:
+        "No 5, BT Road Barrackpore North 24 Parganas, West Bengal - 700120",
+      ifsc: "	HDFC0007800",
+      phone: "9409767967",
+      hours: {
+        mon_fri: "09:30 AM - 3:30 PM",
+        sat: "09:30 AM - 3:30 PM",
+        sun: "Closed",
+      },
+      coordinates: [22.686911929297114, 88.44841616749294],
+      services: ["ATM", "Loans", "Deposit"],
+    },
   ];
 
   let map;
