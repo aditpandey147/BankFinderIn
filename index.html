@@ -39,8 +39,15 @@
                 <button id="searchBtn" class="btn">Search</button>
                 <button id="locateBtn" class="btn location-btn">Find Banks Near Me</button>
             </div>
-
-            <img src="https://placehold.co/800x450" alt="Modern banking interface showing digital transactions on mobile devices with credit cards and online banking dashboard" class="hero-image">
+            <!-- Radius control -->
+            <div class="bg-white border rounded-2xl p-4 flex flex-col sm:flex-row sm:items-center gap-4">
+                <label for="radiusInput" class="font-medium text-blue-600">Search radius:</label>
+                <input id="radiusInput" type="range" min="1" max="20" step="1" value="5" class="w-full sm:w-64"/>
+                <span class="text-blue-800">(<span id="radiusValue" class="text-blue-800">5</span> km)</span>
+                <button id="applyRadiusBtn" class="btn">
+                Apply
+                </button>
+            </div>
         </div>
     </section>
 
@@ -260,7 +267,8 @@
     </footer>
 
     <script src="js/main.js"></script>
-   <script
+    <!-- Google Maps Script -->
+    <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdVE78ZlkUii3c0GlIst2fOr04_l-ccHE&callback=initMap">
       async 
       defer
