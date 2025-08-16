@@ -1,4 +1,3 @@
-
 // Mobile menu toggle
 const mobileMenuBtn = document.getElementById("mobileMenuBtn");
 const navLinks = document.getElementById("navLinks");
@@ -73,8 +72,7 @@ const banks = [
   {
     name: "State bank of india",
     branch: "Barackpore railway station",
-    address:
-      "B.T.Rd, Chiriamore, Barrackpore, 24.Parganasnorth, W.Bengal",
+    address: "B.T.Rd, Chiriamore, Barrackpore, 24.Parganasnorth, W.Bengal",
     ifsc: "SBIN0003071",
     phone: "1800112211",
     hours: {
@@ -116,7 +114,7 @@ const banks = [
     coordinates: [22.724917594505058, 88.47852667694336],
     services: ["ATM", "Loans", "Deposit"],
   },
-  
+
   {
     name: "State bank of india",
     branch: "Nona Chandanpukur",
@@ -163,110 +161,110 @@ const banks = [
     services: ["ATM", "Loans", "Deposit"],
   },
   {
-      name: "State bank of india",
-      branch: "Barrackpore Army Cantonment",
-      address:
-        "Bldg No T-6-1 To T-6-4 Shopping Complex, Barrackpore Cantonment, kolkata, West Bengal-700120",
-      ifsc: "SBIN0061644",
-      phone: "+919674058999",
-      hours: {
-        mon_fri: "10:00 AM - 4:00 PM",
-        sat: "10:00 AM - 4:00 PM",
-        sun: "Closed",
-      },
-      coordinates: [22.764224586478033, 88.35897729360077],
-      services: ["ATM", "Loans", "Deposit"],
+    name: "State bank of india",
+    branch: "Barrackpore Army Cantonment",
+    address:
+      "Bldg No T-6-1 To T-6-4 Shopping Complex, Barrackpore Cantonment, kolkata, West Bengal-700120",
+    ifsc: "SBIN0061644",
+    phone: "+919674058999",
+    hours: {
+      mon_fri: "10:00 AM - 4:00 PM",
+      sat: "10:00 AM - 4:00 PM",
+      sun: "Closed",
     },
-     {
-      name: "Axis Bank",
-      branch: "Barrackpore",
-      address:
-        "Disha Eye Hospital & Research Centre 99/1, S.n. Banerjee Road, Barrackpore, West Bengal 700120",
-      ifsc: "UTIB0000436",
-      phone: "18605005555",
-      hours: {
-        mon_fri: "Open 24 hours",
-        sat: "Open 24 hours",
-        sun: "Open 24 hours",
-      },
-      coordinates: [22.76372412567126, 88.36973200314543],
-      services: ["ATM", "Loans", "Deposit"],
+    coordinates: [22.764224586478033, 88.35897729360077],
+    services: ["ATM", "Loans", "Deposit"],
+  },
+  {
+    name: "Axis Bank",
+    branch: "Barrackpore",
+    address:
+      "Disha Eye Hospital & Research Centre 99/1, S.n. Banerjee Road, Barrackpore, West Bengal 700120",
+    ifsc: "UTIB0000436",
+    phone: "18605005555",
+    hours: {
+      mon_fri: "12:00 AM - 12:00 PM",
+      sat: "12:00 AM - 12:00 PM",
+      sun: "Closed",
     },
-     {
-      name: "Axis Bank",
-      branch: "New Barrackpore",
-      address:
-        "Basudha Apartment, 33 & 35 A.P.C. Road, New Barrackpore, PS Ghola, Dist. North 24 Parganas, West Bengal, Pin 700131",
-      ifsc: "UTIB0001656",
-      phone: "18605005555",
-      hours: {
-        mon_fri: "09:30 AM - 3:30 PM",
-        sat: "09:30 AM - 3:30 PM",
-        sun: "Closed",
-      },
-      coordinates: [22.689194106162965, 88.4488496016247],
-      services: ["ATM", "Loans", "Deposit"],
+    coordinates: [22.763708511066657, 88.36970894722768],
+    services: ["ATM", "Loans", "Deposit"],
+  },
+   {
+    name: "Axis Bank",
+    branch: "New Barrackpore",
+    address:
+      "Basudha Apartment, 33 & 35 A.P.C. Road, New Barrackpore, PS Ghola, Dist. North 24 Parganas, West Bengal, Pin 700131",
+    ifsc: "UTIB0001656",
+    phone: "18605005555",
+    hours: {
+      mon_fri: "09:30 AM - 3:30 PM",
+      sat: "09:30 AM - 3:30 PM",
+      sun: "Closed",
     },
-     {
-      name: "Axis Bank",
-      branch: "New Barrackpore",
-      address:
-        "Ground Floor, 38/1/1, Barasat Rd, Nona Chandanpukur, Jaffarpukur, Barrackpore, West Bengal 700122",
-      ifsc: "UTIB0002555",
-      phone: "18605005555",
-      hours: {
-        mon_fri: "09:30 AM - 3:30 PM",
-        sat: "09:30 AM - 3:30 PM",
-        sun: "Closed",
-      },
-      coordinates: [22.768059729347527, 88.38255554372998],
-      services: ["ATM", "Loans", "Deposit"],
+    coordinates: [22.689194106162965, 88.4488496016247],
+    services: ["ATM", "Loans", "Deposit"],
+  },
+   {
+    name: "Axis Bank",
+    branch: "New Barrackpore",
+    address:
+      "Ground Floor, 38/1/1, Barasat Rd, Nona Chandanpukur, Jaffarpukur, Barrackpore, West Bengal 700122",
+    ifsc: "UTIB0002555",
+    phone: "18605005555",
+    hours: {
+      mon_fri: "09:30 AM - 3:30 PM",
+      sat: "09:30 AM - 3:30 PM",
+      sun: "Closed",
     },
-    {
-      name: "Central Bank Of India",
-      branch: "Barrackpore",
-      address:
-        "25 26 And 28 S.n.banerjee Road, Chiriarmore, Barrackpore, North.24 Paraganas, West Bengal 743101",
-      ifsc: "CBIN0281090",
-      phone: "03325920553",
-      hours: {
-        mon_fri: "10:00 AM - 4:00 PM",
-        sat: "10:00 AM - 4:00 PM",
-        sun: "Closed",
-      },
-      coordinates: [22.761842017206117, 88.3663577593758],
-      services: ["ATM", "Loans", "Deposit"],
+    coordinates: [22.768059729347527, 88.38255554372998],
+    services: ["ATM", "Loans", "Deposit"],
+  },
+  {
+    name: "Central Bank Of India",
+    branch: "Barrackpore",
+    address:
+      "25 26 And 28 S.n.banerjee Road, Chiriarmore, Barrackpore, North.24 Paraganas, West Bengal 743101",
+    ifsc: "CBIN0281090",
+    phone: "03325920553",
+    hours: {
+      mon_fri: "10:00 AM - 4:00 PM",
+      sat: "10:00 AM - 4:00 PM",
+      sun: "Closed",
     },
-    {
-      name: "Hdfc Bank",
-      branch: "Nona Chandanpukur",
-      address:
-        "No 37/2, Gr Floor, Biswanath Residency, Barasat Rd, Nona Chandanpukur, Jaffarpur More, Kolkata, Barrackpore, West Bengal 700122",
-      ifsc: "HDFC0007229",
-      phone: "9409767967",
-      hours: {
-        mon_fri: "09:30 AM - 3:30 PM",
-        sat: "09:30 AM - 3:30 PM",
-        sun: "Closed",
-      },
-      coordinates: [22.767189428763224, 88.382157599293],
-      services: ["ATM", "Loans", "Deposit"],
+    coordinates: [22.761842017206117, 88.3663577593758],
+    services: ["ATM", "Loans", "Deposit"],
+  },
+  {
+    name: "Hdfc Bank",
+    branch: "Nona Chandanpukur",
+    address:
+      "No 37/2, Gr Floor, Biswanath Residency, Barasat Rd, Nona Chandanpukur, Jaffarpur More, Kolkata, Barrackpore, West Bengal 700122",
+    ifsc: "HDFC0007229",
+    phone: "9409767967",
+    hours: {
+      mon_fri: "09:30 AM - 3:30 PM",
+      sat: "09:30 AM - 3:30 PM",
+      sun: "Closed",
     },
-    {
-      name: "Hdfc Bank",
-      branch: "Barrackpore",
-      address:
-        "No 5, BT Road Barrackpore North 24 Parganas, West Bengal - 700120",
-      ifsc: "	HDFC0007800",
-      phone: "9409767967",
-      hours: {
-        mon_fri: "09:30 AM - 3:30 PM",
-        sat: "09:30 AM - 3:30 PM",
-        sun: "Closed",
-      },
-      coordinates: [22.686911929297114, 88.44841616749294],
-      services: ["ATM", "Loans", "Deposit"],
+    coordinates: [22.767189428763224, 88.382157599293],
+    services: ["ATM", "Loans", "Deposit"],
+  },
+  {
+    name: "Hdfc Bank",
+    branch: "Barrackpore",
+    address:
+      "No 5, BT Road Barrackpore North 24 Parganas, West Bengal - 700120",
+    ifsc: "	HDFC0007800",
+    phone: "9409767967",
+    hours: {
+      mon_fri: "09:30 AM - 3:30 PM",
+      sat: "09:30 AM - 3:30 PM",
+      sun: "Closed",
     },
+    coordinates: [22.686911929297114, 88.44841616749294],
+    services: ["ATM", "Loans", "Deposit"],
+  },
 ];
 
 let map;
@@ -317,12 +315,16 @@ function placeBankMarkers(banksToShow) {
   // Center map to show all markers if we have multiple
   if (banksToShow.length > 0) {
     const bounds = new google.maps.LatLngBounds();
-    banksToShow.forEach((bank) => bounds.extend(new google.maps.LatLng(bank.coordinates[0], bank.coordinates[1])));
+    banksToShow.forEach((bank) =>
+      bounds.extend(
+        new google.maps.LatLng(bank.coordinates[0], bank.coordinates[1])
+      )
+    );
     map.fitBounds(bounds);
   }
 }
 
-  // Display bank cards in the results
+// Display bank cards in the results
 function displayBankCards(banksToShow) {
   const resultsContainer = document.getElementById("resultsContainer");
 
@@ -340,8 +342,19 @@ function displayBankCards(banksToShow) {
               <p><strong>Address:</strong> ${bank.address}</p>
               <p><strong>IFSC Code:</strong> ${bank.ifsc}</p>
               <p><strong>Phone:</strong> ${bank.phone}</p>
-              <p><strong>Status:</strong> <span class="${isOpen ? "status-open" : "status-closed"}">${isOpen ? "OPEN NOW" : "CLOSED NOW"}</span></p>
-              ${userPosition ? `<span class="distance">${calculateDistance(userPosition.lat, userPosition.lng, bank.coordinates[0], bank.coordinates[1])} km away</span>` : ""}
+              <p><strong>Status:</strong> <span class="${
+                isOpen ? "status-open" : "status-closed"
+              }">${isOpen ? "OPEN NOW" : "CLOSED NOW"}</span></p>
+              ${
+                userPosition
+                  ? `<span class="distance">${calculateDistance(
+                      userPosition.lat,
+                      userPosition.lng,
+                      bank.coordinates[0],
+                      bank.coordinates[1]
+                    )} km away</span>`
+                  : ""
+              }
               <div class="working-hours">
                 <h4>Working Hours</h4>
                 <p><strong>Mon-Fri:</strong> ${bank.hours.mon_fri}</p>
@@ -394,9 +407,12 @@ function calculateDistance(lat1, lon1, lat2, lon2) {
   const R = 6371;
   const dLat = deg2rad(lat2 - lat1);
   const dLon = deg2rad(lon2 - lon1);
-  const a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
-    Math.cos(deg2rad(lat1)) * Math.cos(deg2rad(lat2)) *
-    Math.sin(dLon / 2) * Math.sin(dLon / 2);
+  const a =
+    Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+    Math.cos(deg2rad(lat1)) *
+      Math.cos(deg2rad(lat2)) *
+      Math.sin(dLon / 2) *
+      Math.sin(dLon / 2);
   return (R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a))).toFixed(1);
 }
 
@@ -410,10 +426,15 @@ function getUserLocation() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(
       (position) => {
-        userPosition = { lat: position.coords.latitude, lng: position.coords.longitude };
+        userPosition = {
+          lat: position.coords.latitude,
+          lng: position.coords.longitude,
+        };
 
         // Move map to user location
-        map.setCenter(new google.maps.LatLng(userPosition.lat, userPosition.lng));
+        map.setCenter(
+          new google.maps.LatLng(userPosition.lat, userPosition.lng)
+        );
         map.setZoom(14);
 
         // Add user marker
@@ -421,7 +442,9 @@ function getUserLocation() {
           position: userPosition,
           map: map,
           title: "Your Location",
-          icon: { url: "https://maps.google.com/mapfiles/ms/icons/green-dot.png" },
+          icon: {
+            url: "https://maps.google.com/mapfiles/ms/icons/green-dot.png",
+          },
         });
         markers.push(userMarker);
 
@@ -439,17 +462,38 @@ function getUserLocation() {
   }
 }
 
-  // Find banks near user
+// Find banks near user
 function findNearbyBanks() {
   let banksToShow = banks;
   if (userPosition) {
-    banksToShow = banks.filter((bank) => {
-      const distance = parseFloat(calculateDistance(userPosition.lat, userPosition.lng, bank.coordinates[0], bank.coordinates[1]));
-      return distance <= 50; // Only within 5 km
-    }).sort((a, b) => {
-      return calculateDistance(userPosition.lat, userPosition.lng, a.coordinates[0], a.coordinates[1]) -
-              calculateDistance(userPosition.lat, userPosition.lng, b.coordinates[0], b.coordinates[1]);
-    });
+    banksToShow = banks
+      .filter((bank) => {
+        const distance = parseFloat(
+          calculateDistance(
+            userPosition.lat,
+            userPosition.lng,
+            bank.coordinates[0],
+            bank.coordinates[1]
+          )
+        );
+        return distance <= 50; // Only within 5 km
+      })
+      .sort((a, b) => {
+        return (
+          calculateDistance(
+            userPosition.lat,
+            userPosition.lng,
+            a.coordinates[0],
+            a.coordinates[1]
+          ) -
+          calculateDistance(
+            userPosition.lat,
+            userPosition.lng,
+            b.coordinates[0],
+            b.coordinates[1]
+          )
+        );
+      });
   }
 
   placeBankMarkers(banksToShow);
@@ -465,7 +509,11 @@ function searchBanks(query) {
     placeBankMarkers(banks);
     return;
   }
-  const results = banks.filter((bank) => bank.name.toLowerCase().includes(query) || bank.ifsc.toLowerCase().includes(query));
+  const results = banks.filter(
+    (bank) =>
+      bank.name.toLowerCase().includes(query) ||
+      bank.ifsc.toLowerCase().includes(query)
+  );
   displayBankCards(results);
   placeBankMarkers(results);
 }
@@ -484,10 +532,10 @@ document.getElementById("searchInput").addEventListener("keyup", (e) => {
 
 // Load Google Maps API
 function loadGoogleMaps() {
-const script = document.createElement("script");
-script.src = `https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap`;
-script.defer = true;
-script.async = true;
-document.head.appendChild(script);
+  const script = document.createElement("script");
+  script.src = `https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap`;
+  script.defer = true;
+  script.async = true;
+  document.head.appendChild(script);
 }
 loadGoogleMaps();
