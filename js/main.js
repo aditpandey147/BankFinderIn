@@ -476,7 +476,7 @@ function findNearbyBanks() {
             bank.coordinates[1]
           )
         );
-        return distance <= 50; // Only within 5 km
+        return distance <= 5; // Only within 5 km
       })
       .sort((a, b) => {
         return (
