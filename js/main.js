@@ -222,7 +222,7 @@
         address: "Ward No 24 Of, Nehru Memorial Techno Global Hospital, 6, Barasat Rd, Lalkuthi More, Barrackpore, West Bengal 700120",
         ifsc: "INDB0002092",
         phone: "18602677777",
-        hours: { mon_fri: "9:30 AM - 5:00 PM", sat: "19:30 AM - 5:00 PM", sun: "Closed" },
+        hours: { mon_fri: "9:30 AM - 5:00 PM", sat: "9:30 AM - 5:00 PM", sun: "Closed" },
         coordinates: [22.767228965436207, 88.36769032943766],
         services: ["ATM", "Loans", "Deposit"],
       },
@@ -520,4 +520,5 @@
       script.async = true;
       document.head.appendChild(script);
     }
+
     loadGoogleMaps();
