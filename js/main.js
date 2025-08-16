@@ -265,6 +265,96 @@ const banks = [
     coordinates: [22.686911929297114, 88.44841616749294],
     services: ["ATM", "Loans", "Deposit"],
   },
+  {
+    name: "Bank Of Baroda",
+    branch: "Barrackpore",
+    address:
+      "1/A Middle Road Anandpuri Po:, Nona Chandanpukur, New, Barrackpore, West Bengal 700122",
+    ifsc: "BARB0BARRAC",
+    phone: "221800223344",
+    hours: {
+      mon_fri: "10:00 AM - 4:00 PM",
+      sat: "10:00 AM - 4:00 PM",
+      sun: "Closed",
+    },
+    coordinates: [22.767092000392672, 88.37427954842182],
+    services: ["ATM", "Loans", "Deposit"],
+  },
+  {
+    name: "Bank Of Baroda",
+    branch: "Nona Chandanpukur",
+    address:
+      "Ward No.05, 37(79/1, Barasat Rd, Nona Chandanpukur, Barrackpore, West Bengal 700122",
+    ifsc: "BARB0DBBPOR",
+    phone: "221800223344",
+    hours: {
+      mon_fri: "10:00 AM - 4:00 PM",
+      sat: "10:00 AM - 4:00 PM",
+      sun: "Closed",
+    },
+    coordinates: [22.767318266363286, 88.37577200430972],
+    services: ["ATM", "Loans", "Deposit"],
+  },
+  {
+    name: "Bank Of Baroda",
+    branch: "Jaffarpur",
+    address:
+      "37(79/1)barasat Road Jaffarpur More Ward No 5 Nona Chandanpukur Barrackpore 700122",
+    ifsc: "BARB0VJBAPO",
+    phone: "221800223344",
+    hours: {
+      mon_fri: "10:00 AM - 4:00 PM",
+      sat: "10:00 AM - 4:00 PM",
+      sun: "Closed",
+    },
+    coordinates: [22.76703012098724, 88.38167957361858],
+    services: ["ATM", "Loans", "Deposit"],
+  },
+  {
+    name: "Bank Of Baroda",
+    branch: "Jaffarpur",
+    address:
+      "37(79/1)barasat Road Jaffarpur More Ward No 5 Nona Chandanpukur Barrackpore 700122",
+    ifsc: "BARB0VJBAPO",
+    phone: "221800223344",
+    hours: {
+      mon_fri: "10:00 AM - 4:00 PM",
+      sat: "10:00 AM - 4:00 PM",
+      sun: "Closed",
+    },
+    coordinates: [22.76703012098724, 88.38167957361858],
+    services: ["ATM", "Loans", "Deposit"],
+  },
+  {
+    name: "Icici Bank",
+    branch: "Barrackpore Cantonment",
+    address:
+      "ICICI Bank Ltd., 4(2), S. N. Banerjee Road, Barrackpore, Kolkata,North 24 Parganas Dist, - 700120",
+    ifsc: "ICIC0003306",
+    phone: "18001080",
+    hours: {
+      mon_fri: "9:30 AM - 3:00 PM",
+      sat: "9:30 AM - 3:00 PM",
+      sun: "Closed",
+    },
+    coordinates: [22.761188707669856, 88.36753182349332],
+    services: ["ATM", "Loans", "Deposit"],
+  },
+  {
+    name: "Indusind Bank",
+    branch: "Barrackpore Cantonment",
+    address:
+      "Ward No 24 Of, Nehru Memorial Techno Global Hospital, 6, Barasat Rd, Lalkuthi More, Barrackpore, West Bengal 700120",
+    ifsc: "INDB0002092",
+    phone: "18602677777",
+    hours: {
+      mon_fri: "9:30 AM - 5:00 PM",
+      sat: "19:30 AM - 5:00 PM",
+      sun: "Closed",
+    },
+    coordinates: [22.767228965436207, 88.36769032943766],
+    services: ["ATM", "Loans", "Deposit"],
+  },
 ];
 
 let map;
