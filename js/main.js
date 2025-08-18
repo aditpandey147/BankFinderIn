@@ -515,10 +515,11 @@
     window.initMap = initMap;
     function loadGoogleMaps() {
       const script = document.createElement("script");
-      script.src = "https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap";
+      script.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCdVE78ZlkUii3c0GlIst2fOr04_l-ccHE&callback=initMap";
       script.defer = true;
       script.async = true;
       document.head.appendChild(script);
     }
 
     loadGoogleMaps();
+
