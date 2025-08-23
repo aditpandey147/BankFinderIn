@@ -352,13 +352,15 @@ document.addEventListener("DOMContentLoaded", function () {
   // Initialize the map
   function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
-      center: { lat: 22.7669, lng: 88.3743 }, // Barrackpore-ish default
+      center: { lat: 19.076, lng: 72.8777 }, // Default to Mumbai
       zoom: 12,
-      styles: [{ featureType: "poi.business", stylers: [{ visibility: "on" }] }],
+      styles: [
+        {
+          featureType: "poi.business",
+          stylers: [{ visibility: "on" }],
+        },
+      ],
     });
-    // Initial load: show all banks
-    placeBankMarkers(banks);
-    displayBankCards(banks);
   }
 
   // Place bank markers on the map
