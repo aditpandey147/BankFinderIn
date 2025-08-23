@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     navLinks.classList.toggle("active");
   });
 
-
+});
   // Sample bank data
   const banks = [
     // barrackpore
@@ -649,7 +649,6 @@ document.addEventListener("DOMContentLoaded", function () {
     drawRadiusCircle();
     findNearbyBanks();
   });
-});
 
 // Load Google Maps API
 window.initMap = initMap;
