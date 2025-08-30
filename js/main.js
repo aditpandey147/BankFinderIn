@@ -339,6 +339,107 @@ document.addEventListener("DOMContentLoaded", function () {
       coordinates: [22.767228965436207, 88.36769032943766],
       services: ["ATM", "Loans", "Deposit"],
     },
+    {
+    name: "Indian Overseas Bank",
+    branch: "Nona Chandanpukur ATM",
+    address: "No. 73, Barasat Road, Nona Chandanpukur, Barrackpore – 700122",
+    ifsc: "IOBA0001459",
+    phone: "28584896",
+    hours: {
+      mon_fri: "24 Hours",
+      sat: "24 Hours",
+      sun: "24 Hours"
+    },
+    coordinates: [22.7702, 88.3725], // approximate
+    services: ["ATM"]
+    },
+  {
+    name: "Ujjivan Small Finance Bank",
+    branch: "Barrackpore",
+    address: "No. 41/1, B.T. Road, Barrackpore, North 24 Parganas – 700123",
+    ifsc: "UJVN0003315",
+    phone: "+91 8040712166",
+    hours: {
+      mon_fri: "10:00 AM - 4:00 PM",
+      sat: "10:00 AM - 4:00 PM (except 2nd & 4th Saturday)",
+      sun: "Closed"
+    },
+    coordinates: [22.7595, 88.3595], // approximate
+    services: ["Microfinance", "Loans", "Savings"]
+    },
+  
+    //titagarh//
+
+    {
+    name: "UCO Bank",
+    branch: "Titagarh",
+    address: "13, B.T. Road, P.O. Titagarh, North 24 Parganas, West Bengal – 700119",
+    ifsc: "UCBA0000221",
+    phone: "033-25010602",
+    hours: {
+      mon_fri: "10:00 AM - 4:00 PM",
+      sat: "10:00 AM - 4:00 PM",
+      sun: "Closed",
+    },
+    coordinates: [22.7399, 88.3736],
+    services: ["ATM", "Loans", "Deposit"],
+    },
+    {
+    name: "State Bank of India",
+    branch: "Titagarh",
+    address: "13, B.T. Road, Titagarh, South 24 Parganas, West Bengal – 743188",
+    ifsc: "SBIN0004727",
+    phone: "033-25011851 / 25010381",
+    hours: {
+      mon_fri: "10:00 AM - 4:00 PM",
+      sat: "10:00 AM - 4:00 PM",
+      sun: "Closed",
+    },
+    coordinates: [22.7405, 88.3741],
+    services: ["ATM", "Deposits", "Loans"],
+    },
+    {
+    name: "Central Bank of India",
+    branch: "Titagarh",
+    address: "12, B.T. Road, Titagarh, Kolkata, West Bengal",
+    ifsc: "CBIN0281349",
+    phone: "022-2612008",
+    hours: {
+      mon_fri: "10:00 AM - 4:00 PM",
+      sat: "10:00 AM - 4:00 PM",
+      sun: "Closed",
+    },
+    coordinates: [22.7388, 88.3750],
+    services: ["ATM", "Deposits"],
+    },
+     {
+    name: "Punjab National Bank",
+    branch: "Titagarh",
+    address: "2, Jalia Para, B.T. Road, Khardah (Titagarh), North 24 Parganas, West Bengal",
+    ifsc: "PUNB0011920",
+    phone: null,
+    hours: {
+      mon_fri: "10:00 AM - 4:00 PM",
+      sat: "10:00 AM - 4:00 PM",
+      sun: "Closed",
+    },
+    coordinates: [22.7278, 88.3785],
+    services: ["ATM", "Deposits", "Loans"],
+    },
+     {
+    name: "Axis Bank",
+    branch: "Titagarh",
+    address: "Ground Floor, House No. 8, B.T. Road, Titagarh, Kolkata – 700119",
+    ifsc: "UTIB0004048",
+    phone: "033-22825185",
+    hours: {
+      mon_fri: "10:00 AM - 4:00 PM",
+      sat: "10:00 AM - 4:00 PM",
+      sun: "Closed",
+    },
+    coordinates: [22.7391, 88.3728],
+    services: ["ATM", "Loans", "Deposit"],
+  }
   ];
 
   let map;
