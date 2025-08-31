@@ -467,12 +467,12 @@ const banks = [
     hours: {
       mon_fri: "10:00 AM - 5:00 PM",
       sat: "10:00 AM - 5:00 PM",
-      sun: "Closed"
+      sun: "Closed",
     },
     coordinates: [22.697380647756276, 88.37408890893147], // approximate
-    services: ["Deposits", "Loans", "RTGS/NEFT"]
+    services: ["Deposits", "Loans", "RTGS/NEFT"],
   },
-   {
+  {
     name: "ICICI Bank",
     branch: "Khardah",
     address: "24 By 18 B T Road, Khardah, Kolkata – 700116",
@@ -481,12 +481,12 @@ const banks = [
     hours: {
       mon_fri: "9:30 AM - 4:30 PM",
       sat: "9:30 AM - 4:30 PM",
-      sun: "Closed"
+      sun: "Closed",
     },
     coordinates: [22.703656201677475, 88.37454279465933], // approximate
-    services: ["Accounts", "Loans", "Deposits"]
+    services: ["Accounts", "Loans", "Deposits"],
   },
-   {
+  {
     name: "ICICI Bank",
     branch: "Khardah (Rahara)",
     address: "165/72 J. C. Road, P.O. Rahara, Khardah – 700118",
@@ -495,12 +495,12 @@ const banks = [
     hours: {
       mon_fri: "9:30 AM - 4:30 PM",
       sat: "9:30 AM - 4:30 PM",
-      sun: "Closed"
+      sun: "Closed",
     },
     coordinates: [22.523983864184377, 88.33997605661429], // approximate
-    services: ["Accounts", "Loans"]
+    services: ["Accounts", "Loans"],
   },
-   {
+  {
     name: "ICICI Bank",
     branch: "Khardah Cooperative Bank Ltd",
     address: "No. 74, P.K. Biswas Road, Khardah – 700117",
@@ -509,26 +509,27 @@ const banks = [
     hours: {
       mon_fri: "10:00 AM - 4:00 PM",
       sat: "10:00 AM - 4:00 PM",
-      sun: "Closed"
+      sun: "Closed",
     },
     coordinates: [22.725914889407004, 88.3657249532209], // approximate
-    services: ["Co-operative Banking", "Deposits", "Loans"]
+    services: ["Co-operative Banking", "Deposits", "Loans"],
   },
-   {
+  {
     name: "Bank of Baroda",
     branch: "Khardah (Rahara)",
-    address: "147/101A, Co-operative Colony, P.O. Rahara, P.S. Khardaha, West Bengal – 700118",
+    address:
+      "147/101A, Co-operative Colony, P.O. Rahara, P.S. Khardaha, West Bengal – 700118",
     ifsc: "BARB0KHARDA",
     phone: "1800-223-344",
     hours: {
       mon_fri: "10:00 AM - 4:00 PM",
       sat: "10:00 AM - 4:00 PM",
-      sun: "Closed"
+      sun: "Closed",
     },
     coordinates: [22.724865499775085, 88.38201780664791], // approximate
-    services: ["Accounts", "Deposits", "Loans"]
+    services: ["Accounts", "Deposits", "Loans"],
   },
-   {
+  {
     name: "West Bengal State Co-op Bank",
     branch: "Khardah",
     address: "Khardah, North 24 Parganas, West Bengal",
@@ -537,12 +538,12 @@ const banks = [
     hours: {
       mon_fri: "10:00 AM - 4:00 PM",
       sat: "10:00 AM - 4:00 PM",
-      sun: "Closed"
+      sun: "Closed",
     },
     coordinates: [22.7445, 88.3835], // approximate
-    services: ["Co-operative Banking", "Deposits"]
+    services: ["Co-operative Banking", "Deposits"],
   },
-   {
+  {
     name: "West Bengal State Co-op Bank",
     branch: "Rahara",
     address: "Rahara, Khardah, North 24 Parganas, West Bengal",
@@ -551,12 +552,12 @@ const banks = [
     hours: {
       mon_fri: "10:00 AM - 4:00 PM",
       sat: "10:00 AM - 4:00 PM",
-      sun: "Closed"
+      sun: "Closed",
     },
-    coordinates: [22.7450, 88.3840], // approximate
-    services: ["Co-operative Banking", "Deposits"]
+    coordinates: [22.745, 88.384], // approximate
+    services: ["Co-operative Banking", "Deposits"],
   },
-   {
+  {
     name: "Allahabad Bank",
     branch: "Khardah",
     address: "B.T. Road, P.O. Khardah, North 24 Parganas, West Bengal",
@@ -565,70 +566,74 @@ const banks = [
     hours: {
       mon_fri: "10:00 AM - 4:00 PM (2nd & 4th Saturday closed)",
       sat: "Closed on 2nd & 4th Saturday",
-      sun: "Closed"
+      sun: "Closed",
     },
     coordinates: [22.724415464047482, 88.37389737301403], // approximate
-    services: ["Deposits", "Loans"]
+    services: ["Deposits", "Loans"],
   },
-   {
+  {
     name: "IDBI Bank",
     branch: "Khardah",
-    address: "Purbasha Kalyan Nagar, Village Panshila, P.S. Khardah, North 24 Parganas, West Bengal",
+    address:
+      "Purbasha Kalyan Nagar, Village Panshila, P.S. Khardah, North 24 Parganas, West Bengal",
     ifsc: "IBKL0000061",
     phone: "9830426138",
     hours: {
       mon_fri: "10:00 AM - 4:00 PM (2nd & 4th Saturday closed)",
       sat: "Closed on 2nd & 4th Saturday",
-      sun: "Closed"
+      sun: "Closed",
     },
     coordinates: [22.718520165338298, 88.3886308300374], // approximate
-    services: ["Deposits", "Loans"]
+    services: ["Deposits", "Loans"],
   },
-   {
+  {
     name: "HDFC Bank",
     branch: "Khardaha",
-    address: "2 19, Old Calcutta Rd, Rahara Bazar P.O. Rahara, Khardaha, North 24 Parganas, West Bengal – 700118",
+    address:
+      "2 19, Old Calcutta Rd, Rahara Bazar P.O. Rahara, Khardaha, North 24 Parganas, West Bengal – 700118",
     ifsc: "HDFC0002667",
     phone: "9831073333",
     hours: {
       mon_fri: "10:00 AM - 4:00 PM",
       sat: "Closed on 2nd & 4th Saturday",
-      sun: "Closed"
+      sun: "Closed",
     },
     coordinates: [22.723848284683854, 88.38708268650703], // approximate
-    services: ["Accounts", "Loans", "Deposits"]
+    services: ["Accounts", "Loans", "Deposits"],
   },
-   
+
   //sodpur//
-   {
+  {
     name: "State Bank of India",
     branch: "Sodepur",
-    address: "Sodepur Station Road, Sodepur, North 24 Parganas, West Bengal – 700110",
+    address:
+      "Sodepur Station Road, Sodepur, North 24 Parganas, West Bengal – 700110",
     ifsc: "SBIN0001796",
     phone: "033-25532982",
     hours: {
       mon_fri: "10:00 AM - 4:00 PM",
       sat: "10:00 AM - 4:00 PM",
-      sun: "Closed"
+      sun: "Closed",
     },
     coordinates: [22.70088913482841, 88.37854290522975], // approximate
-    services: ["Deposits", "Loans", "NEFT/RTGS"]
+    services: ["Deposits", "Loans", "NEFT/RTGS"],
   },
-   {
+  {
     name: "State Bank of India",
     branch: "H.B. Town Sodepur",
-    address: "Barasat Road, P.O. Sodepur, Sodepur, North 24 Parganas, West Bengal – 700110",
+    address:
+      "Barasat Road, P.O. Sodepur, Sodepur, North 24 Parganas, West Bengal – 700110",
     ifsc: "SBIN0007654",
     phone: "033-25657775",
     hours: {
       mon_fri: "10:00 AM - 4:00 PM",
       sat: "10:00 AM - 4:00 PM",
-      sun: "Closed"
+      sun: "Closed",
     },
     coordinates: [22.69664101118353, 88.39372391534269], // approximate
-    services: ["Deposits", "Loans"]
+    services: ["Deposits", "Loans"],
   },
-    {
+  {
     name: "HDFC Bank",
     branch: "Sodepur",
     address: "2, Burmashell, Barasat Road, Sodepur, Kolkata – 700110",
@@ -637,54 +642,57 @@ const banks = [
     hours: {
       mon_fri: "10:00 AM - 4:00 PM",
       sat: "10:00 AM - 1:00 PM",
-      sun: "Closed"
+      sun: "Closed",
     },
     coordinates: [22.699032309970995, 88.38585867116431], // approximate
-    services: ["Deposits", "Loans", "Accounts"]
+    services: ["Deposits", "Loans", "Accounts"],
   },
-    {
+  {
     name: "Bank of India",
     branch: "Sodepur",
-    address: "Mangaldeep 7 Indraloke, Sodepur, Barasat Road, North 24 Parganas, West Bengal",
+    address:
+      "Mangaldeep 7 Indraloke, Sodepur, Barasat Road, North 24 Parganas, West Bengal",
     ifsc: "BKID0004148",
     phone: "1800220229",
     hours: {
       mon_fri: "10:00 AM - 4:00 PM",
       sat: "10:00 AM - 4:00 PM",
-      sun: "Closed"
+      sun: "Closed",
     },
     coordinates: [22.696513211363587, 88.39435307116433], // approximate
-    services: ["Deposits", "Loans"]
+    services: ["Deposits", "Loans"],
   },
-    {
+  {
     name: "Central Bank of India",
     branch: "Sodepur",
-    address: "Station Road, Sodepur, P.O. Panihati, North 24 Parganas, West Bengal",
+    address:
+      "Station Road, Sodepur, P.O. Panihati, North 24 Parganas, West Bengal",
     ifsc: "CBIN0281409",
-    phone:  "033 2553 2555",
+    phone: "033 2553 2555",
     hours: {
       mon_fri: "10:00 AM - 4:00 PM",
       sat: "10:00 AM - 4:00 PM",
-      sun: "Closed"
+      sun: "Closed",
     },
     coordinates: [22.701095511826644, 88.37981497301404], // approximate
-    services: ["Deposits", "Loans"]
+    services: ["Deposits", "Loans"],
   },
-    {
+  {
     name: "Bandhan Bank",
     branch: "Sodepur",
-    address: "First Floor, A-55, Amrabati, Sodepur, North 24 Parganas, West Bengal – 700110",
+    address:
+      "First Floor, A-55, Amrabati, Sodepur, North 24 Parganas, West Bengal – 700110",
     ifsc: "BDBL0001296",
     phone: "+919073912961",
     hours: {
       mon_fri: "9:30 AM - 4:30 PM",
       sat: "9:30 AM - 4:30 PM",
-      sun: "Closed"
+      sun: "Closed",
     },
     coordinates: [22.694075450297724, 88.37908933733326],
-    services: ["Deposits", "Loans", "ATM (24 hrs)"]
+    services: ["Deposits", "Loans", "ATM (24 hrs)"],
   },
-    {
+  {
     name: "HDFC Bank",
     branch: "Sodepur",
     address: "2, Burmashell, Barasat Road, Panihati, Sodepur, Kolkata – 700110",
@@ -693,24 +701,70 @@ const banks = [
     hours: {
       mon_fri: "9:30 AM – 3:30 PM",
       sat: "9:30 AM – 3:30 PM",
-      sun: "Closed"
+      sun: "Closed",
     },
     coordinates: [22.69898282081378, 88.38592304417836],
-    services: ["Deposits", "Loans", "Accounts"]
+    services: ["Deposits", "Loans", "Accounts"],
   },
-    {
+  {
     name: "Union Bank of India",
     branch: "Sodepur",
-    address: "Manashi Plaza, Ground Floor, 175, R.N. Avenue, South Pansila, Sodepur, North 24 Parganas – 700118",
+    address:
+      "Manashi Plaza, Ground Floor, 175, R.N. Avenue, South Pansila, Sodepur, North 24 Parganas – 700118",
     ifsc: "UBIN0554383",
     phone: "08369454380",
     hours: {
       mon_fri: "10:00 - 4:00",
-      sat:"10:00 - 4:00",
-      sun: "Closed"
+      sat: "10:00 - 4:00",
+      sun: "Closed",
     },
     coordinates: [22.473129512228482, 88.33090516980981],
-    services: ["Deposits", "Loans"]
+    services: ["Deposits", "Loans"],
+  },
+  //palta//
+  {
+    name: "State Bank of India",
+    branch: "Sreepally Palta",
+    address:
+      "22/1 & 22/3, Sreepally, PO Bengal Enamel, Palta, North 24 Parganas – 743122",
+    ifsc: "SBIN0010091",
+    phone: "033-25450731",
+    hours: {
+      mon_fri: "10:00 AM - 4:00 PM",
+      sat: "10:00 AM - 4:00 PM",
+      sun: "Closed",
+    },
+    coordinates: [22.780859097409447, 88.3759286], // approximate
+    services: ["Deposits", "Loans", "NEFT/RTGS"],
+  },
+  {
+    name: "State Bank of India",
+    branch: "Babanpur (Rural)",
+    address:
+      "Santinagar, Babanpur, PO Bengal Enamel, Palta, North 24 Parganas – 743122",
+    ifsc: "SBIN0015957",
+    phone: "033-23551483",
+    hours: {
+      mon_fri: "10:00 AM - 4:00 PM",
+      sat: "10:00 AM - 4:00 PM (except 2nd & 4th Saturday)",
+      sun: "Closed",
+    },
+    coordinates: [22.79351584641958, 88.38285315527666], // approximate
+    services: ["Deposits", "Loans", "NEFT/RTGS"],
+  },
+  {
+    name: "HDFC Bank",
+    branch: "Palta Station Road ATM",
+    address: "Ground Floor, Dr. B. R. Ambedkar Road, Palta – 743122",
+    ifsc: null,
+    phone: "+91-9409767967",
+    hours: {
+      mon_fri: "12:00 AM - 11:59 PM",
+      sat: "12:00 AM - 11:59 PM",
+      sun: "Open",
+    },
+    coordinates: [22.78153264014804, 88.3702839469795], // approximate
+    services: ["ATM (24 Hours)"],
   },
 ];
 
